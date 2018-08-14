@@ -1,0 +1,25 @@
+<div>
+    <nav class="navbar fixed-top navbar-light bg-dark">
+    <a class="navbar-brand">{{title}}</a>
+    </nav>
+    <form>
+    <div class="form-group mt-4">
+        <label for="chatRoomNameInput">Chat room name</label>
+        <input type="text" name="chatRoomName" class="form-control" id="chatRoomNameInput" aria-describedby="chatRoomNameHelp" placeholder="Enter chat room name">
+        <small id="chatRoomNameHelp" class="form-text text-muted">Use a unique name for your one time chat room</small>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1">Passkey</label>
+        <input type="password" name="passkey" class="form-control" id="exampleInputPassword1" aria-describedby="passKeyHelp" placeholder="Passkey">
+        <small id="passKeyHelp" class="form-text text-muted">A passkey can help you hide your chat from the strangers</small>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1">Set username</label>
+        <input type="password" name="username" class="form-control" id="exampleInputPassword1" aria-describedby="passKeyHelp" placeholder="set a username or leave blank to stay anonymous">
+        <small id="passKeyHelp" class="form-text text-muted">A passkey can help you hide your chat from the strangers</small>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Start New</button> <span>OR</span>
+    <button type="button" onclick="validate()" class="btn btn-primary">Join Existing</button>
+    </form>
+</div>
