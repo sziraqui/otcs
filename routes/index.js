@@ -8,6 +8,14 @@ router.get('/', function(req, res, next) {
 
 
 router.post('/init-chat', function(req, res, next) {
+  const roomName = req.body.chatRoomName;
+  const passkey = req.body.passkey;
+  var username = req.body.username;
+  /**
+   * todos: check if room name exists and verify passkey
+   * get random username if undefined
+   */
+  res.render('chatroom', { title: roomName});
 
 });
 

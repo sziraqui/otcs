@@ -8,6 +8,15 @@ var app = require('../app');
 var debug = require('debug')('otc:server');
 var http = require('http');
 const fs = require('fs');
+const path = require('path');
+
+/**
+ * Pre-listening steps
+ */
+const rootDir = path.resolve('./');
+console.log(rootDir);
+const dataDir = path.join(rootDir,'data');
+createData(dataDir);
 
 /**
  * Get port from environment and store in Express.
@@ -90,9 +99,9 @@ function onListening() {
   debug('Listening on ' + bind);
 }
 
-function createData(){
-  if(!fs.existsSync('../data/chatdb.json')){
-      fs.mkdir('../data', (err) => {
+function createData(dataDirectory){
+  if(!fs.existsSync(dataDirectory)){
+      fs.mkdir(dataDirectory, (err) => {
         if(err) console.log('I/:', err.message);
       });
   }
