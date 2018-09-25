@@ -133,6 +133,13 @@ iframe {
 	border: none !important;
 }
 
+nav {
+  z-index: 1;
+  background: -webkit-linear-gradient(left, #00dbde, #00dbde, #fc00ff);
+  background: -o-linear-gradient(left, #00dbde, #00dbde, #fc00ff);
+  background: -moz-linear-gradient(left, #00dbde, #00dbde, #fc00ff);
+  background: linear-gradient(left, #00dbde, #00dbde, #fc00ff);
+}
 /*//////////////////////////////////////////////////////////////////
 [ Utility ]*/
 .txt1 {

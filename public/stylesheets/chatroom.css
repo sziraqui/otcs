@@ -171,10 +171,33 @@ img{ max-width:100%;}
   margin-left: 50px;
 }
 
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-#main {
+#container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
   transition: margin-left .5s;
-  padding: 20px;
+  padding: 0px;
+  margin: 0px;
+}
+
+#left-section {
+  min-height: 100vh;
+  width: 20%;
+  background-color: whitesmoke;
+}
+
+#main-content {
+  min-height: 100vh;
+  width: 60%;
+  background-color: slateblue;
+  box-shadow: 20px 16px 4px 2px gray;
+}
+
+#right-section {
+  min-height: 100vh;
+  width: 20%;
+  background: whitesmoke;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
